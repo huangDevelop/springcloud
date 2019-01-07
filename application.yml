@@ -1,12 +1,12 @@
 # springcloud
-server:
-  port: 8761
+spring:
+  application:
+    name: eureka-provider-dev
 
 eureka:
   instance:
-    hostname: 192.168.0.230
+      hostname: 192.168.0.230
+      port: 8761
   client:
-    register-with-eureka: false
-    fetch-registry: false
     service-url:
-       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      default-zone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
