@@ -10,3 +10,6 @@ eureka:
   client:
     service-url:
       default-zone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+      
+fileName:
+  application-dev.yml
