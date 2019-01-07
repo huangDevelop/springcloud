@@ -1,0 +1,13 @@
+
+spring:
+  application:
+    name: eureka-provider-dev
+
+
+eureka:
+  instance:
+      hostname: 192.168.0.230
+      port: 8761
+  client:
+    service-url:
+      default-zone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
