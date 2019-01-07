@@ -1,3 +1,12 @@
 # springcloud
 server:
   port: 8761
+
+eureka:
+  instance:
+    hostname: 192.168.0.230
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
