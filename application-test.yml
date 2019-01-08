@@ -1,1 +1,19 @@
-fileName: application-test.yml
+fileName: 
+   application-test.yml
+   
+spring:
+  application:
+    name: eureka-provider-dev
+  cloud:
+      config:
+        label: master
+        profile: dev
+        uri: http://192.168.0.230:8888/
+
+eureka:
+  instance:
+      hostname: 192.168.0.230
+      port: 8761
+  client:
+    service-url:
+      default-zone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
