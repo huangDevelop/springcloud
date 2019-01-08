@@ -1,8 +1,4 @@
 # springcloud
-spring:
-  application:
-    name: eureka-provider-dev
-
 eureka:
   instance:
       hostname: 192.168.0.230
