@@ -6,6 +6,12 @@ eureka:
   client:
     service-url:
       default-zone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+     
+spring:
+  application:
+    name: eureka-provider-dev
+  profiles:
+    active: dev
       
 fileName:
   application-dev.yml
